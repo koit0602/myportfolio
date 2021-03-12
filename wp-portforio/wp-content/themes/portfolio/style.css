@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/*
+Theme Name: My PortFolio
+*/
+
+html,body{
+    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    background-color: #efefef;
+}
+
+.container{
+    background-color: white!important;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.kito{
+    color: white;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.kito:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.kito:active {
+    transform: scale(.9);
+}
+
+.borderLeftRight {
+    display: inline-block;
+    position: relative;
+    color: hsl(222, 25%, 14%);
+  }
+  
+
+
+/* ヘッダー */
+header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    color: white;
+    height: 20vh;
+    background-color: #3dc7ee;
+    transition: 0.3s;
+}
+
+.header-transparent{
+    background-color: transparent;
+}
+
+.header-hide {
+    transform: translateY(-100%);
+}
+
+.header-nav{
+    height: 100%;
+}
+
+.mb-header-nav-a,.pc-nav-a{
+    color: white;
+    transform: color 0.5s;
+}
+
+.mb-header-nav-a:hover,.pc-nav-a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.top-img{
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+.mobile-nav-box{
+    height: 100%;
+}
+
+.pc-header-right{
+    font-size: 1.3rem;
+}
+
+.pc-nav-a{
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.pc-nav-a:hover {
+    text-decoration: none;
+    color: white;
+}
+  
+.pc-nav-a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 10;
+}
+
+.pc-nav-a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* モバイル用 */
+
+/* スマホ用 */
+@media (min-width: 300px){
+    .mobile-header-title{
+        font-size: 2rem;
+    }
+
+    .about-name{
+        font-size: 1.5rem;
+    }
+}
+
+/* タブレット用 */
+@media (min-width: 700px){
+    .mobile-header-title{
+        font-size: 3rem;
+    }
+
+    .about-name{
+        font-size: 2rem;
+    }
+}
+
+/* PC用 */
+
+.pc-header-title{
+    font-size: 3.5rem;
+}
+
+.about-wrapper,.service-wrapper,.contact-wrapper{
+    /* padding-top: 20vh; */
+}
+
+#about,#service,#contact{
+    padding-top: 20vh;
+    margin-top: -20vh;
+}
+
+/* .about-h,.service-h,.contact-h{
+    padding-bottom: 10vh;
+} */
+
+/* アバウト */
+.about-wrapper{
+}
+
+.about-span-color{
+    color: #3dc7ee;
+}
+
+.about-h{
+    
+}
+
+.about-box{
+}
+
+
+.img-squere-position{
+    top: 5%;
+    right: 10%;
+}
+
+.img-squere-parent{
+    padding-top: 100%;
+}
+
+.img-squere{
+    top: 0;
+}
+
+.about-img{
+}
+
+.jquery-icon{
+    width: 16px!important;
+    height: auto;
+}
+
+.icon-html{
+    color: rgb(255, 145, 0);
+}
+
+.icon-css{
+    color: #25a1e1;
+}
+
+.icon-php{
+    color: #787cb4;
+}
+
+.icon-js{
+    color: #fdd83c;
+}
+
+.icon-wp{
+    color: #21759a;
+}
+
+.icon-bootstrap{
+    color: #8a13fc;
+}
+
+
+
+/* Service */
+.service-box{
+    padding-top: 100%;
+}
+
+.service-span-color{
+    color: #3dc7ee;
+}
+
+.service-content-box{
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-content-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.service-content-icon1{
+    color: #3dc7ee;
+}
+
+.service-content-icon2{
+    color: #3dc7ee;
+}
+
+.service-content-icon3{
+    color: #3dc7ee;
+}
+
+.service-content-icon{
+    font-size: 2.8rem!important;
+}
+
+.service-content-position{
+    width: 100%;
+    height: 100%;
+}
+
+.service-content-colorbox1{
+    border:5px solid #3dc7ee;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.service-content-colorbox2{
+    border:5px solid #3dc7ee;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.service-content-colorbox3{
+    border:5px solid #3dc7ee;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.service-content-whitebox{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 5%;
+    right: 5%;
+    box-shadow: 3px -3px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact-span-color{
+    color: #3dc7ee;
+}
+
+.form-btn{
+    background-color: #fdd83c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: auto;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+}
+
+.form-btn:hover{
+    opacity: 0.7;
+}
+
+.form-btn:active{
+    box-shadow: none;
+    top: 2px;
+}
+
+.ajax-loader{
+    display: none!important;
+}
+
+
+/* フッター */
+footer{
+    height: 12vh;
+    border-top: 2px #3b3b3b solid;
+}
+
+.mb-footer-nav-a{
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+.mb-footer-nav-icon{
+    color: black;
+    display: inline-block;
+}
+
+.mb-footer-nav-a:hover,.mb-footer-nav-icon:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+  
+  .mb-footer-nav-a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .mb-footer-nav-a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
